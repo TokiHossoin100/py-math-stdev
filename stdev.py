@@ -3,6 +3,7 @@ import statistics as st
 dataset = []
 x = 0
 
+#Loop to enter data
 print("To stop entering data, enter anything other than a number.")
 while True:		#start while loop
 	try:
