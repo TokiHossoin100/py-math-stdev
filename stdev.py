@@ -4,6 +4,7 @@ dataset = []
 x = 0
 
 #Loop to enter data
+print("Please enter your data (more precise data = more precise result)")
 print("To stop entering data, enter anything other than a number.")
 while True:		#start while loop
 	try:
@@ -13,6 +14,8 @@ while True:		#start while loop
     except ValueError:     #catches exception when a non-float is entered (exit loop)
         break
 
-#Calculate and print standard deviation
+#Return standard deviation and mean
 sd = st.stdev(dataset)
-print("s = {}".format(sd))
+mean = sum(dataset)/len(dataset)
+print('''s = {}
+mean = {}'''.format(sd, mean))
